@@ -1,0 +1,38 @@
+ These text files contain the stiffness and mass matrices used for case:
+ "MODAL"
+
+ File .TXA (this file) describes the rest of the files.
+ File .TXE gives the equation number for each DOF at each joint.
+ File .TXC defines the constraint equations (only present if needed).
+ File .TXK gives the lower half of the symmetric stiffness matrix.
+ File .TXM gives the lower half of the symmetric mass matrix.
+
+ Each file includes a single header line that begins with "Note:"
+ All data in the files is delimited with the TAB character.
+
+ The number of regular joints         =          16
+ The number of internal master joints =           0
+ The number of active equations       =          72
+ The number of constraint equations   =           0
+
+ Each DOF (U1, U2, U3, R1, R2, R3) at each joint has an equation number as
+ given in the .TXE file. Joints include the regular joints that define the
+ analysis model, plus internal master joints created to represent the 
+ constraints. The equation number may be:
+
+    > 0, from 1 to the number of active equations, indicating the row and
+         column in the stiffness and mass matrices of the active equation.
+         This corresponds to an Active DOF.
+
+    = 0, indicating a Null or Restrained DOF.
+
+    < 0, from -1 to the (-)number of constraint equations, indicating that the
+         value is determined by a constraint equation, see the .TXC file.
+         This corresponds to a Constrained DOF.
+
+ Each constraint equation (if any) defines a constrained DOF as a linear
+ combination of one or more active DOF. In the .TXC file there is one line of 
+ data for each term of each constraint equation. Each line lists the 
+ constraint equation number (negative), the active DOF equation number,
+ and a coefficient that multiplies the active DOF value. The constrained DOF
+ is the sum of these products.

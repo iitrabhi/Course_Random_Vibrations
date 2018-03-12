@@ -1,0 +1,96 @@
+
+
+ SAP2000 v18.1.1 Ultimate 32-bit (Analysis Build 9447/32)
+ File: F:\Textbooks\Sem II\CE 607\Assignment\1\SAP Model\Model2.LOG
+
+
+
+
+ B E G I N   A N A L Y S I S                                2016/10/11  02:14:06
+
+
+ RUNNING ANALYSIS WITHIN THE GUI PROCESS
+ USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
+
+ NUMBER OF JOINTS                          =          16
+    WITH RESTRAINTS                        =           4
+ NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =          12
+ NUMBER OF SHELL ELEMENTS                  =           3
+ NUMBER OF LOAD PATTERNS                   =           1
+ NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF LOAD CASES                      =           2
+
+
+ E L E M E N T   F O R M A T I O N                                      02:14:06
+
+
+
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        02:14:06
+
+ FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =          72
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =        1188
+
+ ---------------------------------
+ BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
+    NUMBER OF NEGATIVE STIFFNESS EIGENVALUES SHOULD BE ZERO FOR STABILITY.
+    (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
+     SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
+
+    NUMBER OF NEGATIVE EIGENVALUES         =           0,  OK.
+ ---------------------------------
+
+
+ L I N E A R   S T A T I C   C A S E S                                  02:14:06
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ TOTAL NUMBER OF CASES TO SOLVE            =           1
+ NUMBER OF CASES TO SOLVE PER BLOCK        =           1
+
+ LINEAR STATIC CASES TO BE SOLVED:
+
+ CASE: DEAD
+
+
+ E I G E N   M O D A L   A N A L Y S I S                                02:14:06
+
+ CASE: MODAL
+
+ USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
+
+ NUMBER OF STIFFNESS DEGREES OF FREEDOM    =          72
+ NUMBER OF MASS DEGREES OF FREEDOM         =          36
+ MAXIMUM NUMBER OF EIGEN MODES SOUGHT      =          12
+ MINIMUM NUMBER OF EIGEN MODES SOUGHT      =           1
+ NUMBER OF RESIDUAL-MASS MODES SOUGHT      =           0
+ NUMBER OF SUBSPACE VECTORS USED           =          24
+ RELATIVE CONVERGENCE TOLERANCE            =    1.00E-09
+
+ FREQUENCY SHIFT  (CENTER) (CYC/TIME)      =     .000000
+ FREQUENCY CUTOFF (RADIUS) (CYC/TIME)      =  -INFINITY-
+ ALLOW AUTOMATIC FREQUENCY SHIFTING        =         YES
+
+
+ Original stiffness at shift : EV= 0.0000000E+00, f=     .000000, T=  -INFINITY-
+ Number of eigenvalues below shift =      0
+ Found mode      1 of     12:  EV= 8.3724059E+00, f=    0.460517, T=    2.171474
+ Found mode      2 of     12:  EV= 8.9299935E+00, f=    0.475604, T=    2.102589
+ Found mode      3 of     12:  EV= 8.9318502E+00, f=    0.475654, T=    2.102370
+ Found mode      4 of     12:  EV= 1.1192815E+01, f=    0.532463, T=    1.878063
+ Found mode      5 of     12:  EV= 1.8190068E+01, f=    0.678793, T=    1.473203
+ Found mode      6 of     12:  EV= 2.0989250E+01, f=    0.729153, T=    1.371455
+ Found mode      7 of     12:  EV= 2.1100466E+01, f=    0.731082, T=    1.367835
+ Found mode      8 of     12:  EV= 3.3823574E+01, f=    0.925614, T=    1.080364
+ Found mode      9 of     12:  EV= 1.3073582E+02, f=    1.819774, T=    0.549519
+ Found mode     10 of     12:  EV= 1.3523849E+02, f=    1.850846, T=    0.540293
+ Found mode     11 of     12:  EV= 1.3524871E+02, f=    1.850916, T=    0.540273
+ Found mode     12 of     12:  EV= 1.5337463E+02, f=    1.971047, T=    0.507345
+
+ NUMBER OF EIGEN MODES FOUND               =          12
+ NUMBER OF ITERATIONS PERFORMED            =           5
+ NUMBER OF STIFFNESS SHIFTS                =           0
+
+
+ A N A L Y S I S   C O M P L E T E                          2016/10/11  02:14:06
